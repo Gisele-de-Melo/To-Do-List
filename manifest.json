@@ -1,0 +1,61 @@
+{
+  "prefer_related_applications": false,
+  "name": "TODO List",
+  "short_name": "TODO List",
+  "start_url": ".",
+  "background_color": "#7f3ff7",
+  "theme_color": "#181a24",
+  "display": "standalone",
+  "scope": "index.html",
+  "icons": [
+
+    {
+      "src": "./assets/bg-desktop-light-mobile.png",
+      "type": "image/png",
+      "size": "585x200",
+      "purpose": "any maskable"
+    },    
+
+    {
+      "src": "./assets/bg-desktop-dark-mobile.png",
+      "type": "image/png",
+      "size": "425x200",
+      "purpose": "any maskable"
+    },    
+
+    {
+      "src": "./assets/bg-desktop-dark-splash.png",
+      "type": "image/png",
+      "size": "512x512",
+      "purpose": "any maskable"
+    },    
+
+    {
+      "src": "./assets/favicon.png",
+      "type": "image/png",
+      "size": "24x24",
+      "purpose": "any maskable"
+    },        
+
+    {
+      "src": "./assets/icon-check.svg",
+      "type": "image/svg",
+      "size": "11x9",
+      "purpose": "any maskable"
+    },
+    
+    {
+      "src": "./assets/icon-sun.svg",
+      "type": "image/svg",
+      "size": "26x26",
+      "purpose": "any maskable"
+    },
+
+    {
+      "src": "./assets/icon-moon.svg",
+      "type": "image/svg",
+      "size": "26x26",
+      "purpose": "any maskable"
+    }    
+  ]
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name= "theme-color" content="#181a24">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="./style.css">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png" />
+  <link rel="canonical" href="https://admiring-murdock-dc1283.netlify.app">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <title>To Do App</title>
+  
+</head>
+<body>
+  <div class="background-image">
+    <img src="./assets/bg-desktop-light.jpg" alt="background image">
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <div class="title">TODO</div>
+      <div class="theme">
+        <img src="./assets/icon-moon.svg" alt="theme" onclick="setTheme()">
+      </div>
+    </div>
+
+    <div class="new-todo">
+      <div class="check">
+        <div id="new-check-mark" class="check-mark" onclick="markAllCompleted()"></div>
+      </div>
+      <div class="new-todo-input">
+        <form onsubmit="addItem(event)">
+          <input id="todo-input" type="text" placeholder="Create a new todo ...">
+        </form>
+      </div>
+    </div>
+
+    <div class="todo-items-wrapper">
+      <div class="todo-items">
+        <div class="todo-item">
+          <div class="check">
+            <div class="check-mark">
+              <img src="./assets/icon-check.svg" alt="mark as checked">
+            </div>
+          </div>
+          <div class="todo-text">
+            cut the lawn
+          </div>
+        </div>
+        <div class="todo-item">
+          <div class="check">
+            <div class="check-mark">
+              <img src="./assets/icon-check.svg" alt="mark as checked">
+            </div>
+          </div>
+          <div class="todo-text">
+            cut the lawn
+          </div>
+        </div>
+        <div class="todo-item">
+          <div class="check">
+            <div class="check-mark">
+              <img src="./assets/icon-check.svg" alt="mark as checked">
+            </div>
+          </div>
+          <div class="todo-text">
+            cut the lawn
+          </div>
+        </div>                
+      </div>
+      <div class="todo-items-info">
+        <div class="items-left">
+          ...
+        </div>
+        <div class="items-statuses">
+          <span id="all" class="active" onclick="showAll()" >All </span>
+          <span id="active" onclick="showActive()"> Active </span>
+          <span id="completed" onclick="showCompleted()">Complete</span>
+        </div>
+        <div class="items-clear">
+          <span onclick="clearCompleted()">Clear Completed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./firebase.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
